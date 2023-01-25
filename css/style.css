@@ -1,0 +1,102 @@
+.header-upper-part {
+    background-color: #222222;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-upper-part-logo-search {
+    max-width: 111px;
+    min-height: 38px;
+    display: flex;
+    gap: 41px;
+    align-items: center
+}
+
+.header-upper-part-logo {
+    width: 44px;
+    height: 38px;
+}
+
+
+.header-upper-part-search {
+    width: 26px;
+    height: 26, 79px;
+}
+
+.header-upper-part-menu {
+    max-width: 159px;
+    min-height: 29px;
+    display: flex;
+    gap: 33px;
+}
+
+.btn-zero {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bottom-part {
+    min-height: 764px;
+    background: #F1E4E6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 91px;
+    flex-wrap: wrap;
+}
+
+.categories {
+    width: 100%;
+    max-width: 1140px;
+    margin: 65px auto 96px auto;
+}
+
+.categories-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(233px, 360px));
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-item {
+    min-height: 260px;
+}
+
+.categories-item-big {
+    grid-column: span 3;
+
+}
+
+.categories-item-link {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.categories-item-woman {
+    background-image: url(../img/woman.jpg);
+}
+
+.categories-item-men {
+    background-image: url(../img/men.jpg);
+}
+
+.categories-item-kids {
+    background-image: url(../img/kids.jpg);
+}
+
+.categories-item-accessesories {
+    background-image: url(../img/accessories.jpg);
+}
+
+.woman-txt {
+    position: absolute;
+
+}
