@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: lato;
+}
+
 .header-upper-part {
     background-color: #222222;
     min-height: 75px;
@@ -73,11 +82,14 @@
 }
 
 .categories-item-link {
-    display: block;
+    display: flex;
     width: 100%;
     min-height: 100%;
     background-position: center;
     background-size: cover;
+    outline: 1px solid red;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .categories-item-woman {
@@ -96,7 +108,152 @@
     background-image: url(../img/accessories.jpg);
 }
 
-.woman-txt {
-    position: absolute;
+.categories-item-txt {
+    display: flex;
+    width: 100%;
+    max-width: 154px;
+    min-height: 50px;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px #222222;
+}
 
+.categories-item-txt-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.categories-item-txt-title {
+    color: #F16D7F;
+}
+
+.categories-item-txt-big {
+    display: flex;
+    width: 100%;
+    max-width: 160px;
+    min-height: 50px;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px #222222;
+}
+
+.cards {
+    width: 100%;
+    max-width: 1140px;
+    min-height: 1395px;
+    outline: 1px solid red;
+    margin: 0 auto 60px auto;
+}
+
+.cards-list {
+    list-style: none;
+    outline: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+}
+
+.cards-list-item-big {
+    outline: 1px solid red;
+    grid-column: 3 span;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.cards-list-item {
+    list-style: none;
+    outline: 1px solid red;
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    min-height: 581px;
+    background: #F8F8F8;
+}
+
+.products-item-photo {
+    width: 100%;
+    max-width: 360px;
+}
+
+
+.cards-list-item-txt-wrp {
+    width: 100%;
+    max-width: 315px;
+    min-height: 117px;
+    margin: 23.35px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards-list-item-title {
+    font-weight: 400px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.cards-list-item-txt {
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.cards-list-item-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.cards-list-item-big-title {
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.cards-list-item-big-txt {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+
+}
+
+.cards-list-item-btn {
+    grid-column: 3 span;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.cards-list-item-button {
+    width: 100%;
+    max-width: 211px;
+    min-height: 47px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background: none;
+    padding: 15px 39px;
+    border: 1px solid #FF6A6A;
+}
+
+.cards-list-item-button:hover {
+    background: #F16D7F;
+    color: white;
+}
+
+.cards-list-item-button:active {
+    background: white;
+    color: #F26376;
 }
