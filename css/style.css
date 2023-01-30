@@ -150,6 +150,18 @@ body {
     flex-wrap: wrap;
 }
 
+.header-bottom-photo {
+    width: 100%;
+    max-width: 801px;
+    min-height: 764px;
+}
+
+.header-bottom-title-model {
+    width: 100%;
+    max-width: 405px;
+    min-height: 93px;
+}
+
 .categories {
     width: 100%;
     max-width: 1140px;
@@ -356,6 +368,7 @@ body {
     background: none;
     padding: 15px 39px;
     border: 1px solid #FF6A6A;
+    white-space: nowrap;
 }
 
 .cards-list-item-button:hover {
@@ -413,4 +426,62 @@ body {
 
 .cards-list-item:hover .products-item-btn:active svg {
     fill: #fff;
+}
+
+@media (max-width:1024px) {
+    .header-bottom-photo-model {
+        max-width: 368px;
+        min-height: 368px;
+    }
+
+    .header-bottom-photo {
+        max-width: 368px;
+        min-height: 368px;
+    }
+
+    .header-bottom-title-model {
+        max-width: 311px;
+        min-height: 92px;
+    }
+
+    .header-bottom-part {
+        min-height: 368px;
+        gap: 39px;
+        flex-wrap: nowrap;
+    }
+
+    .categories-list {
+        gap: 19px;
+    }
+
+    .categories-item {
+        min-height: 167px;
+        object-fit: cover;
+    }
+
+    .categories-item-big {
+        min-height: 116px;
+    }
+
+    .cards-list {
+        gap: 19px;
+    }
+
+    .cards-list {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .cards-list-item-btn {
+        grid-column: 2 span;
+    }
+
+    .cards-list-item-big {
+        grid-column: 2 span;
+    }
+
+    .cards-list-item-button {
+        margin: 32px 0 0 0;
+    }
 }
