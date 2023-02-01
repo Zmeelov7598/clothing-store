@@ -485,3 +485,88 @@ body {
         margin: 32px 0 0 0;
     }
 }
+
+@media (max-width:767px) {
+    .header-profil-btn {
+        display: none;
+    }
+
+    .header-basked-btn {
+        display: none;
+    }
+
+    .header-bottom-part {
+        justify-content: center;
+        min-height: 363px;
+    }
+
+    .header-bottom-photo {
+        display: none;
+    }
+
+    .header-bottom-title-model {
+        max-width: 263px;
+        min-height: 66px;
+    }
+
+    .categories-list {
+        grid-template-columns: repeat(1, minmax(300px, 767px));
+        min-height: 247px;
+    }
+
+    .categories-item-big {
+        grid-column: 1 span;
+    }
+
+    .categories-item-link {
+        display: flex;
+        width: 100%;
+        max-width: 343px;
+        background-size: cover;
+        justify-content: center;
+        text-decoration: none;
+        margin: auto;
+    }
+
+    .cards-list {
+        grid-template-columns: repeat(1, minmax(300px, 767px));
+        gap: 16px;
+
+    }
+
+    .cards-list-item {
+        margin: auto;
+    }
+
+    .cards-list-item-btn {
+        grid-column: 1;
+    }
+
+    .cards-list-item-big {
+        grid-column: 1;
+    }
+
+    .products-item-photo {
+        object-fit: cover;
+    }
+
+    .cards-list-item-big-txt {
+        margin-bottom: 65px;
+    }
+
+    .categories-item-kids {
+        min-height: 248px;
+    }
+
+    .categories-item-men {
+        min-height: 248px;
+    }
+
+    .categories-item-woman {
+        min-height: 248px;
+    }
+
+    .search-icon-form__input {
+        max-width: 57px;
+    }
+}
