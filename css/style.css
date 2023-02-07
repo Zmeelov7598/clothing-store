@@ -85,6 +85,17 @@ body {
     height: 38px;
 }
 
+.header-upper-part-logo:hover {
+    background-color: #F1E4E6;
+    border-radius: 10px;
+}
+
+.header-upper-part-logo:active {
+    background-color:
+        #222222;
+    border-radius: 10px;
+}
+
 .header-upper-part-menu {
     max-width: 159px;
     min-height: 29px;
@@ -106,6 +117,10 @@ body {
     min-height: 23px;
     background: url(../img/burger.svg) no-repeat;
     position: relative;
+}
+
+.dropdown:hover {
+    background-color: #F16D7F;
 }
 
 .dropdown-checkbox {
@@ -199,13 +214,54 @@ body {
 .header-bottom-photo {
     width: 100%;
     max-width: 801px;
+    min-width: 540px;
     min-height: 764px;
 }
 
-.header-bottom-title-model {
+.header-bottom-title {
     width: 100%;
     max-width: 405px;
     min-height: 93px;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.header-bottom-title-regtangle {
+    max-width: 12px;
+    width: 100%;
+    min-height: 92px;
+    background-color: #F16D7F;
+}
+
+.header-bottom-title-txt {
+    width: 100%;
+    max-width: 377px;
+    min-height: 93px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.header-bottom-title-txt-h2 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.header-bottom-title-txt-p {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 58px;
+    color: #222222;
+    margin: 0px;
+
+}
+
+.header-bottom-title-txt-p-color {
+    color: #F16D7F;
 }
 
 .categories {
@@ -229,7 +285,7 @@ body {
 
 .categories-item-big {
     grid-column: span 3;
-
+    min-height: 180px;
 }
 
 .categories-item-link {
@@ -363,13 +419,13 @@ body {
 }
 
 .cards-list-item-title {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 13px;
     line-height: 16px;
 }
 
 .cards-list-item-txt {
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
@@ -383,14 +439,14 @@ body {
 }
 
 .cards-list-item-big-title {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     color: #222222;
 }
 
 .cards-list-item-big-txt {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
@@ -536,7 +592,6 @@ body {
     width: 100%;
     min-height: 448px;
     background-image: url(../img/footer-bg.jpg);
-    background-size: no-repeat;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -705,13 +760,11 @@ input[type="email"]:focus {
 
     .header-bottom-photo {
         max-width: 368px;
+        min-width: 354px;
         min-height: 368px;
     }
 
-    .header-bottom-title-model {
-        max-width: 311px;
-        min-height: 92px;
-    }
+
 
     .header-bottom-part {
         min-height: 368px;
@@ -719,8 +772,33 @@ input[type="email"]:focus {
         flex-wrap: nowrap;
     }
 
+    .header-bottom-title-txt {
+        width: 100%;
+        max-width: 283px;
+        min-height: 78px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .header-bottom-title-txt-h2 {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+        color: #222222;
+    }
+
+    .header-bottom-title-txt-p {
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 55px;
+        color: #222222;
+        margin: 0px;
+    }
+
     .categories-list {
         gap: 19px;
+        padding: 0 16.5px 0 16.5px;
     }
 
     .categories-item {
@@ -794,6 +872,31 @@ input[type="email"]:focus {
     .header-bottom-title-model {
         max-width: 263px;
         min-height: 66px;
+    }
+
+    .header-bottom-title {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header-bottom-title-regtangle {
+        max-width: 12px;
+        min-height: 61px;
+    }
+
+    .header-bottom-title-txt {
+        max-width: 236px;
+        min-height: 66px;
+    }
+
+    .header-bottom-title-txt-h2 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .header-bottom-title-txt-p {
+        font-size: 19px;
+        line-height: 51px;
     }
 
     .categories-list {
